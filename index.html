@@ -5,6 +5,8 @@
   <title>PureCloud WebChat Demo</title>
 </head>
 
+<script src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.mypurecloud.com/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>	
+	
 <body>
   <script type="text/javascript">
     window._genesys = {
@@ -51,8 +53,7 @@
       console.log('Chat ended', e);
     });
   </script>
-
-  <script src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.mypurecloud.com/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
+ 
 
   <button type="button" id="chat-button-simple" onclick="customPlugin.command('WebChat.open');">Start Chat (simple)</button>
 
